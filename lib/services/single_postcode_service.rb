@@ -99,4 +99,16 @@ class SinglePostcodeService
     @single_postcode_data['result']['codes']['admin_county']
   end
 
+  def get_ccg
+    @single_postcode_data['result']['codes']['ccg']
+  end
+
+  def get_ced
+    @single_postcode_data['result']['codes']['ced']
+  end
+
+  def get_nuts
+    @single_postcode_data['result']['codes']['nuts']
+  end
+
 end

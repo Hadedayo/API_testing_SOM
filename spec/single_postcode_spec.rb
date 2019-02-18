@@ -95,4 +95,20 @@ describe SinglePostcodeService do
       expect(@single_postcode_service.admin_county).to be_kind_of String
     end
 
+    it "should return a ccg string of nine characters" do
+      expect(@single_postcode_service.get_ccg).to be_kind_of String
+      expect(@single_postcode_service.get_ccg.length).to eq 9
+    end
+
+    it "should return a ced string of nine characters" do
+      expect(@single_postcode_service.get_ced).to be_kind_of String
+      expect(@single_postcode_service.get_ced.length).to eq 9
+    end
+
+    it "should return a nuts string of five characters" do
+      expect(@single_postcode_service.get_nuts).to be_kind_of String
+      expect(@single_postcode_service.get_nuts.length).to eq 5
+    end
+
+
 end

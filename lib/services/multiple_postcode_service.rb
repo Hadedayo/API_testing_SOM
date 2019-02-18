@@ -95,4 +95,21 @@ class MultiplePostcodeService
     @multiple_postcode_data['result'][0]['result']['codes']['admin_county']
   end
 
+  # def get_ccg
+  #   @multiple_postcode_data['result'][0]['result']['codes']['ccg']
+  # end
+  #
+  # def get_ced
+  #   @multiple_postcode_data['result'][0]['result']['codes']['ced']
+  # end
+  #
+  # def get_nuts
+  #   @multiple_postcode_data['result'][0]['result']['codes']['nuts']
+  # end
+
 end
+test = MultiplePostcodeService.new
+puts test.get_multiple_postcodes('tw106nf, b322tl')
+puts test.get_ccg
+puts test.get_ced
+puts test.get_nuts
